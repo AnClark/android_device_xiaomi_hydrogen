@@ -29,7 +29,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
 
 # Kernel
-TARGET_KERNEL_CONFIG := mokee_hydrogen_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_hydrogen_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -42,3 +42,10 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # inherit from the proprietary version
 -include vendor/xiaomi/hydrogen/BoardConfigVendor.mk
+
+# ======== ANCLARK MODIFIED AT 2017-1-25 17:52:49 ========
+# Tell the build system that this device uses legacy camera HAL.
+# Legacy camera HAL is not compatible with CameraServer security feature of Android 7.1.
+# [Referred to] Commit: 3ee08625ac865f5670ce1173f84c058f18e59e59 - frameworks-av (git) - Android-x86 - OSDN
+# https://osdn.net/projects/android-x86/scm/git/frameworks-av/commits/3ee08625ac865f5670ce1173f84c058f18e59e59
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
