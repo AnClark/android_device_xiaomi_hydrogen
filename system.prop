@@ -18,3 +18,6 @@ persist.radio.ignore_dom_time=5
 # https://osdn.net/projects/android-x86/scm/git/frameworks-av/commits/3ee08625ac865f5670ce1173f84c058f18e59e59
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
+
+# Disable sdcardfs due to compatibility of some apps (QQ, Wechat, etc.)
+ro.sys.sdcardfs=true
