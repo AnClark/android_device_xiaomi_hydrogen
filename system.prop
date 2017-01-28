@@ -20,4 +20,4 @@ media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 
 # Disable sdcardfs due to compatibility of some apps (QQ, Wechat, etc.)
-ro.sys.sdcardfs=true
+ro.sys.sdcardfs=false
