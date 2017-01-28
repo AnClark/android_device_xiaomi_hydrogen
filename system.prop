@@ -19,5 +19,3 @@ persist.radio.ignore_dom_time=5
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 
-# Disable sdcardfs due to compatibility of some apps (QQ, Wechat, etc.)
-ro.sys.sdcardfs=false

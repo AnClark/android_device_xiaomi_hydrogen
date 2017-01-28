@@ -49,3 +49,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 # [Referred to] Commit: 3ee08625ac865f5670ce1173f84c058f18e59e59 - frameworks-av (git) - Android-x86 - OSDN
 # https://osdn.net/projects/android-x86/scm/git/frameworks-av/commits/3ee08625ac865f5670ce1173f84c058f18e59e59
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+
+# Disable sdcardfs due to compatibility of some apps (QQ, Wechat, etc.)
+TARGET_USE_SDCARDFS := false
